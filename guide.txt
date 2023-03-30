@@ -1,0 +1,47 @@
+tutorial link: https://www.web3.university/tracks/create-a-smart-contract/deploy-your-first-smart-contract
+structure of a smart contract: https://www.web3.university/tracks/create-a-smart-contract/structure-of-a-smart-contract
+
+
+Ethers.js: a library that makes it easier to interact and make requests to Ethereum by wrapping standard JSON-RPC methods with more user friendly methods.
+
+development environments:
+    - Truffle: 
+    - Hardhat: Hardhat is a development environment to compile, deploy, test, and debug your Ethereum software. 
+      It helps developers when building smart contracts and dApps locally before deploying to the live chain.
+
+blockchain develop platforms:
+    - Alchemy: a blockchain developer platform and API that allows us to communicate with the Ethereum chain without having to run our own nodes. 
+      The platform also has developer tools for monitoring and analytics that we’ll take advantage of in this tutorial to understand what’s going on under the hood in our smart contract deployment.
+    - Infura: 
+
+Ethereum VM: the virtual machine that runs ethereum programs locally if you're running a node.
+
+Ethereum: the blockchain network used to deploy smart contracts.
+
+Metamask: virtual wallet
+
+Wei: the smallest denomination of ether. The conversion from wei to eth is: 1 eth = 10^18 wei.
+
+Faucet: website that gives you fake Eth to use on test network. https://goerlifaucet.com/
+
+Etherscan: website to view ethereum transactions (used to ensure smart contract is deployed onto testnet and mainnet)
+
+Solidity: programming language used to program smart contracts
+
+Test Networks:
+- Goerli: 
+- Rinkeby
+- Roptsen
+
+Layer 1 vs Layer 2:
+Layer 2 chains (e.g., Arbitum, Polygon, Lightning) are chains built on top of Layer 1 chains (e.g., Ethereum) to support faster transaction times, higher throughput, lower gas costs, and many more benefits. 
+Activity and transactions are ultimately relayed to the Layer 1 chain through the use of rollups (e.g., optimistic rollups, zk-rollups).
+
+Rollups:
+
+
+command to compile smart contract
+$ npx hardhat compile
+
+command to deploy smart contract on goerli test network:
+$ npx hardhat run scripts/deploy.js --network goerli
